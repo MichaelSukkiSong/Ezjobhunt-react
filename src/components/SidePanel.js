@@ -37,7 +37,7 @@ const SidePanel = () => {
             <span className="text-xs font-bold text-gray-500">Job Search</span>
           </div>
           <div className="mt-4 flex flex-col space-y-4">
-            <Link>
+            <Link className="flex items-center space-x-2 font-medium text-sm bg-gray-200 py-1.5 px-2 rounded">
               <SearchIcon />
               <span>Discover</span>
             </Link>
