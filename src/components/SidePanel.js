@@ -57,23 +57,23 @@ const SidePanel = () => {
             Application Tracker
           </span>
           <div className="mt-4 flex flex-col space-y-4">
-            <Link>
+            <Link className="flex items-center space-x-2 font-medium text-sm">
               <Icon as={BsBookmark} />
               <span>Saved</span>
             </Link>
-            <Link>
+            <Link className="flex items-center space-x-2 font-medium text-sm">
               <Icon as={BsBookmarkCheck} />
               <span>Applied</span>
             </Link>
-            <Link>
+            <Link className="flex items-center space-x-2 font-medium text-sm">
               <Icon as={HiOutlinePaperAirplane} />
               <span>Interviewing</span>
             </Link>
-            <Link>
+            <Link className="flex items-center space-x-2 font-medium text-sm">
               <Icon as={BsBookmarkX} />
               <span>Rejected</span>
             </Link>
-            <Link>
+            <Link className="flex items-center space-x-2 font-medium text-sm">
               <Icon as={BsEyeSlash} />
               <span>Hidden</span>
             </Link>
