@@ -1,46 +1,90 @@
+import { Link } from 'react-router-dom';
 import { Divider } from '@chakra-ui/react';
+import { SearchIcon, ChatIcon } from '@chakra-ui/icons';
+import { Icon } from '@chakra-ui/react';
+import { MdSettings } from 'react-icons/md';
+import {
+  BsBookmark,
+  BsBookmarkCheck,
+  BsBookmarkX,
+  BsEyeSlash,
+} from 'react-icons/bs';
+import { HiOutlinePaperAirplane } from 'react-icons/hi';
+import { SiFoodpanda } from 'react-icons/si';
 
 const SidePanel = () => {
   return (
-    <div>
-      <div className="flex h-screen p-2 pt-8 border-r">
-        <div className="flex flex-col ml-2 w-48 overflow-y-auto">
-          <div className="flex flex-col p-2">
-            <div>Ezjobhunt</div>
-            <div>
-              Discover exciting jobs and track applications in one place.
+    <div className="flex h-screen p-2 pt-8 border-r">
+      <div className="flex flex-col ml-2 w-48 overflow-y-auto">
+        <div className="flex flex-col py-4 px-2">
+          <div className="flex  font-bold text-xl mb-4 ">
+            <div className="flex justify-center items-center mr-2">
+              <Icon as={MdSettings} className="" />
             </div>
+            <span className="flex justify-center items-center">Ezjobhunt</span>
           </div>
-          <Divider />
-          <div className="p-2">Employers / Post a Job</div>
-          <Divider />
-          <div className="flex flex-col p-2">
-            <div>Talent Network</div>
-            <div>Mochi</div>
-            <div>Inbox</div>
+          <div className="text-xs">
+            Discover exciting jobs and track applications in one place.
           </div>
-          <Divider />
-          <div className="flex flex-col p-2">
-            <div>Discover Jobs</div>
-            <div>WFH</div>
-            <div>Office</div>
-            <div>Espresso</div>
-            <div>Boba</div>
+        </div>
+        <Divider />
+        <div className="py-4 text-sm text-orange-600">
+          Employers / Post a Job
+        </div>
+        <Divider />
+        <div className="flex flex-col py-4 px-2">
+          <div className="flex items-center">
+            <span className="text-xs font-bold text-gray-500">Job Search</span>
           </div>
-          <Divider />
-          <div className="flex flex-col p-2">
-            <div>Application Tracker</div>
-            <div>Saved</div>
-            <div>Applied</div>
-            <div>Interviewing</div>
-            <div>Rejected</div>
-            <div>Hidden</div>
+          <div className="mt-4 flex flex-col space-y-4">
+            <Link>
+              <SearchIcon />
+              <span>Discover</span>
+            </Link>
+            <Link>
+              <Icon as={SiFoodpanda} />
+              <span>Mochi</span>
+            </Link>
+            <Link>
+              <ChatIcon />
+              <span>Inbox</span>
+            </Link>
           </div>
-          <Divider />
-          <div className="flex flex-col p-2">
-            <div>About Ezjobhunt</div>
-            <div>Feature Requests</div>
-            <div>How it Works</div>
+        </div>
+        <Divider />
+        <div className="flex flex-col py-4 px-2">
+          <span className="text-xs font-bold text-gray-500">
+            Application Tracker
+          </span>
+          <div className="mt-4 flex flex-col space-y-4">
+            <Link>
+              <Icon as={BsBookmark} />
+              <span>Saved</span>
+            </Link>
+            <Link>
+              <Icon as={BsBookmarkCheck} />
+              <span>Applied</span>
+            </Link>
+            <Link>
+              <Icon as={HiOutlinePaperAirplane} />
+              <span>Interviewing</span>
+            </Link>
+            <Link>
+              <Icon as={BsBookmarkX} />
+              <span>Rejected</span>
+            </Link>
+            <Link>
+              <Icon as={BsEyeSlash} />
+              <span>Hidden</span>
+            </Link>
+          </div>
+        </div>
+        <Divider />
+        <div className="flex flex-col py-4 px-2">
+          <div className="mt-4 flex flex-col space-y-4">
+            <span>About Ezjobhunt</span>
+            <span>Feature Requests</span>
+            <span>How it Works</span>
           </div>
         </div>
       </div>
