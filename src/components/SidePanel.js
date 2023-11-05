@@ -28,9 +28,9 @@ const SidePanel = () => {
           </div>
         </div>
         <Divider />
-        <div className="py-4 text-sm text-orange-600">
+        <Link className="py-4 text-sm text-orange-600">
           Employers / Post a Job
-        </div>
+        </Link>
         <Divider />
         <div className="flex flex-col py-4 px-2">
           <div className="flex items-center">
@@ -41,11 +41,11 @@ const SidePanel = () => {
               <SearchIcon />
               <span>Discover</span>
             </Link>
-            <Link>
+            <Link className="flex items-center space-x-2 mt-4 mb-4 font-medium text-sm ">
               <Icon as={SiFoodpanda} />
               <span>Mochi</span>
             </Link>
-            <Link>
+            <Link className="flex items-center space-x-2 mt-4 mb-4 font-medium text-sm ">
               <ChatIcon />
               <span>Inbox</span>
             </Link>
@@ -81,10 +81,12 @@ const SidePanel = () => {
         </div>
         <Divider />
         <div className="flex flex-col py-4 px-2">
+          <span className="text-xs font-bold text-gray-500">
+            About Ezjobhunt
+          </span>
           <div className="mt-4 flex flex-col space-y-4">
-            <span>About Ezjobhunt</span>
-            <span>Feature Requests</span>
-            <span>How it Works</span>
+            <span className="font-medium text-sm">Feature Requests</span>
+            <span className="font-medium text-sm">How it Works</span>
           </div>
         </div>
       </div>
