@@ -4,14 +4,15 @@ import {
   createRoutesFromElements,
   Route,
 } from 'react-router-dom';
-import Layout from './pages/layouts/Layout';
 import MainPage from './pages/MainPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path="/" element={<Layout />}>
+      <Route path="/">
         <Route index element={<MainPage />} />
+        <Route path="mochi" />
+        <Route path="inbox" />
         <Route path="jobTracker">
           <Route path="saved-jobs" />
           <Route path="applied-jobs" />
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
           <Route path="rejected-jobs" />
           <Route path="hidden-jobs" />
         </Route>
+        <Route path="backlog" />
       </Route>
     </Route>
   )

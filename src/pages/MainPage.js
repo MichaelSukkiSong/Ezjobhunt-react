@@ -1,12 +1,16 @@
-import MainPanel from '../components/MainPanel';
-import SidePanel from '../components/SidePanel';
+import MainPagePC from './MainPagePC';
+import MainPageMobile from './MainPageMobile';
 
 const MainPage = () => {
   return (
-    <div className="flex h-screen">
-      <SidePanel />
-      <MainPanel />
-    </div>
+    <>
+      <div className="block p-4 md:p-0 md:hidden">
+        <MainPageMobile />
+      </div>
+      <div className="hidden md:block">
+        <MainPagePC />
+      </div>
+    </>
   );
 };
 

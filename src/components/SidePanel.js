@@ -89,6 +89,11 @@ const SidePanel = () => {
             <span className="font-medium text-sm">How it Works</span>
           </div>
         </div>
+        <div className="flex items-center justify-center bg-white py-4 border-t">
+          <Link className="w-full flex items-center text-center justify-center text-orange-800 text-sm font-medium bg-orange-200 py-2 rounded-full">
+            Log In
+          </Link>
+        </div>
       </div>
     </div>
   );
