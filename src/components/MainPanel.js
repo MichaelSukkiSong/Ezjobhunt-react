@@ -1,4 +1,5 @@
-import { SearchIcon } from '@chakra-ui/icons';
+import { SearchIcon, ChevronDownIcon } from '@chakra-ui/icons';
+import { Switch } from '@chakra-ui/react';
 
 const MainPanel = () => {
   return (
@@ -16,9 +17,64 @@ const MainPanel = () => {
               />
             </div>
           </div>
-          <div className="mt-4 mb-2"></div>
-          <div className="flex items-center my-2 mb-4 ml-2 space-x-4"></div>
-          <div className="infinite-scroll-component__outerdiv"></div>
+          <div className="mt-4 mb-2">
+            <div className="flex text-sm font-medium w-full space-x-2">
+              <div className="flex flex-row items-center space-x-2 border rounded-xl outline-none">
+                <button className="flex flex-auto items-center justify-between space-x-4 p-2">
+                  <div className="flex items-center space-x-2 px-2">
+                    <span>Location</span>
+                    <ChevronDownIcon boxSize={4} />
+                  </div>
+                </button>
+              </div>
+              <div className="flex flex-row items-center space-x-2 border rounded-xl outline-none p-2">
+                <span>Remote Only</span>
+                <Switch />
+              </div>
+              <select></select>
+              <select></select>
+              <button></button>
+              <div></div>
+            </div>
+          </div>
+          <div className="flex items-center my-2 mb-4 ml-2 space-x-4">
+            <div>
+              <div>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+              </div>
+            </div>
+          </div>
+          <div className="infinite-scroll-component__outerdiv">
+            <div>
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
