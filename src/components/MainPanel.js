@@ -121,28 +121,93 @@ const MainPanel = () => {
             </div>
           </div>
           <div className="flex items-center my-2 mb-4 ml-2 space-x-4">
-            <div>
-              <div>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+            <div className="flex-auto flex items-center justify-center overflow-hidden">
+              <div className="flex space-x-4 lg:space-x-8 overflow-x-scroll hide-scrollbar ">
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Computer Software</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Health & Wellness</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Financial Technology</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Health & Wellness</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Education</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Transportation</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Media & Entertainment</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>E-Commerce</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Blockchain</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>AI/ML</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Food</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Non-Profit</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Government</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Biotechnology</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Cybersecurity</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Legal</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Insurance</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Telecommunications</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Climate Tech</span>
+                </button>
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Real Estate & Construction</span>
+                </button>
+
+                <button className="flex flex-none items-center space-x-2 p-2 rounded-full text-xs font-medium text-gray-600 bg-white border">
+                  icon
+                  <span>Robotics</span>
+                </button>
               </div>
             </div>
           </div>
