@@ -45,7 +45,7 @@ import { LiaRobotSolid } from 'react-icons/lia';
 const MainPanel = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <div className="h-screen p-4 w-full">
+    <div className="h-screen p-4 w-full overflow-x-hidden">
       <div className="md:px-2">
         <div className="flex flex-col">
           <div className="flex flex-col justify-center">
@@ -228,73 +228,341 @@ const MainPanel = () => {
           </div>
           <div className="infinite-scroll-component__outerdiv">
             <div className="infinite-scroll-component ">
-              <div className="masonry sm:masonry-sm md:masonry-md lg:masonry-lg xl:masonry-xl 2xl:masonry-2xl">
-                <div className="break-inside-auto mb-[1.5rem]">
-                  <div className="relative flex flex-col lg:max-w-sm items-start justify-start text-start">
-                    <div className="flex flex-col items-start w-full rounded-3xl pt-2 overflow-auto hide-scrollbar border hover:border-yellow-600">
-                      <div className="flex flex-col text-start items-start px-4">
-                        <span className="font-bold text-start">
-                          HT Manager - My Auto Store
-                        </span>
-                        <button className="flex items-center space-x-1 text-start font-light text-sm">
-                          <span>EMR USA Metal Recycling</span>- icon
+              <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
+                <div className="relative flex flex-col lg:max-w-sm items-start justify-start text-start">
+                  <div className="flex flex-col items-start w-full rounded-3xl pt-2 overflow-auto hide-scrollbar border hover:border-yellow-600">
+                    <div className="flex flex-col text-start items-start px-4">
+                      <span className="font-bold text-start">
+                        HT Manager - My Auto Store
+                      </span>
+                      <button className="flex items-center space-x-1 text-start font-light text-sm">
+                        <span>EMR USA Metal Recycling</span>- icon
+                      </button>
+                    </div>
+                    <div className="flex flex-col w-full">
+                      <div className="flex flex-col mt-2 px-4 space-y-2 text-sm">
+                        <div>
+                          icon-
+                          <button className="text-start text-sm underline text-yellow-600 font-medium">
+                            Multiple Locations Available
+                          </button>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            About
+                          </span>
+                          <span className="font-light">
+                            EMR is one of the world\u2019s leading metal
+                            recycling companies with a history spanning decades.
+                            Our mission is to provide our customers with
+                            efficient and reliable metal recycling services
+                            while minimizing the environmental impact of our ...
+                          </span>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            Requirements
+                          </span>
+                          <span className="font-light">
+                            Bachelor\u2019s Degree, 7 years of HR experience, 5
+                            years of supervisory experience, advanced knowledge
+                            of MS Word, Excel, Outlook, PowerPoint, payroll
+                            software systems, SHRM certification, experience
+                            working in manufacturing, distribution,...
+                          </span>
+                        </div>
+                      </div>
+                      <div>
+                        <button className="flex items-center space-x-1.5 mx-4 mt-4 text-sm text-orange-800">
+                          icon -
+                          <span className="font-medium">
+                            Full Job Description
+                          </span>
                         </button>
                       </div>
-                      <div className="flex flex-col w-full">
-                        <div className="flex flex-col mt-2 px-4 space-y-2 text-sm">
-                          <div>
-                            icon-
-                            <button className="text-start text-sm underline text-yellow-600 font-medium">
-                              Multiple Locations Available
-                            </button>
-                          </div>
-                          <div className="flex flex-col space-y-1">
-                            <span className="font-bold text-xs text-gray-500">
-                              About
-                            </span>
-                            <span className="font-light">
-                              EMR is one of the world\u2019s leading metal
-                              recycling companies with a history spanning
-                              decades. Our mission is to provide our customers
-                              with efficient and reliable metal recycling
-                              services while minimizing the environmental impact
-                              of our ...
-                            </span>
-                          </div>
-                          <div className="flex flex-col space-y-1">
-                            <span className="font-bold text-xs text-gray-500">
-                              Requirements
-                            </span>
-                            <span className="font-light">
-                              Bachelor\u2019s Degree, 7 years of HR experience,
-                              5 years of supervisory experience, advanced
-                              knowledge of MS Word, Excel, Outlook, PowerPoint,
-                              payroll software systems, SHRM certification,
-                              experience working in manufacturing,
-                              distribution,...
-                            </span>
-                          </div>
-                        </div>
-                        <div>
-                          <button className="flex items-center space-x-1.5 mx-4 mt-4 text-sm text-orange-800">
-                            icon -
-                            <span className="font-medium">
-                              Full Job Description
-                            </span>
-                          </button>
-                        </div>
-                        <div className="flex text-sm items-center space-x-4 px-4 pb-4 mt-4">
-                          <button className="px-4 py-2 rounded font-medium bg-orange-100 text-orange-800">
-                            Apply Now
-                          </button>
+                      <div className="flex text-sm items-center space-x-4 px-4 pb-4 mt-4">
+                        <button className="px-4 py-2 rounded font-medium bg-orange-100 text-orange-800">
+                          Apply Now
+                        </button>
+                        <div className="flex items-center space-x-4">
+                          <button>ani btn</button>
                           <div className="flex items-center space-x-4">
-                            <button>ani btn</button>
-                            <div className="flex items-center space-x-4">
-                              <button>i1</button>
-                              <button>i2</button>
-                              <button>i3</button>
-                              <button>i4</button>
-                            </div>
+                            <button>i1</button>
+                            <button>i2</button>
+                            <button>i3</button>
+                            <button>i4</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative flex flex-col lg:max-w-sm items-start justify-start text-start">
+                  <div className="flex flex-col items-start w-full rounded-3xl pt-2 overflow-auto hide-scrollbar border hover:border-yellow-600">
+                    <div className="flex flex-col text-start items-start px-4">
+                      <span className="font-bold text-start">
+                        HT Manager - My Auto Store
+                      </span>
+                      <button className="flex items-center space-x-1 text-start font-light text-sm">
+                        <span>EMR USA Metal Recycling</span>- icon
+                      </button>
+                    </div>
+                    <div className="flex flex-col w-full">
+                      <div className="flex flex-col mt-2 px-4 space-y-2 text-sm">
+                        <div>
+                          icon-
+                          <button className="text-start text-sm underline text-yellow-600 font-medium">
+                            Multiple Locations Available
+                          </button>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            About
+                          </span>
+                          <span className="font-light">
+                            EMR is one of the world\u2019s leading metal
+                            recycling companies with a history spanning decades.
+                            Our mission is to provide our customers with
+                            efficient and reliable metal recycling services
+                            while minimizing the environmental impact of our ...
+                          </span>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            Requirements
+                          </span>
+                          <span className="font-light">
+                            Bachelor\u2019s Degree, 7 years of HR experience, 5
+                            years of supervisory experience, advanced knowledge
+                            of MS Word, Excel, Outlook, PowerPoint, payroll
+                            software systems, SHRM certification, experience
+                            working in manufacturing, distribution,...
+                          </span>
+                        </div>
+                      </div>
+                      <div>
+                        <button className="flex items-center space-x-1.5 mx-4 mt-4 text-sm text-orange-800">
+                          icon -
+                          <span className="font-medium">
+                            Full Job Description
+                          </span>
+                        </button>
+                      </div>
+                      <div className="flex text-sm items-center space-x-4 px-4 pb-4 mt-4">
+                        <button className="px-4 py-2 rounded font-medium bg-orange-100 text-orange-800">
+                          Apply Now
+                        </button>
+                        <div className="flex items-center space-x-4">
+                          <button>ani btn</button>
+                          <div className="flex items-center space-x-4">
+                            <button>i1</button>
+                            <button>i2</button>
+                            <button>i3</button>
+                            <button>i4</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative flex flex-col lg:max-w-sm items-start justify-start text-start">
+                  <div className="flex flex-col items-start w-full rounded-3xl pt-2 overflow-auto hide-scrollbar border hover:border-yellow-600">
+                    <div className="flex flex-col text-start items-start px-4">
+                      <span className="font-bold text-start">
+                        HT Manager - My Auto Store
+                      </span>
+                      <button className="flex items-center space-x-1 text-start font-light text-sm">
+                        <span>EMR USA Metal Recycling</span>- icon
+                      </button>
+                    </div>
+                    <div className="flex flex-col w-full">
+                      <div className="flex flex-col mt-2 px-4 space-y-2 text-sm">
+                        <div>
+                          icon-
+                          <button className="text-start text-sm underline text-yellow-600 font-medium">
+                            Multiple Locations Available
+                          </button>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            About
+                          </span>
+                          <span className="font-light">
+                            EMR is one of the world\u2019s leading metal
+                            recycling companies with a history spanning decades.
+                            Our mission is to provide our customers with
+                            efficient and reliable metal recycling services
+                            while minimizing the environmental impact of our ...
+                          </span>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            Requirements
+                          </span>
+                          <span className="font-light">
+                            Bachelor\u2019s Degree, 7 years of HR experience, 5
+                            years of supervisory experience, advanced knowledge
+                            of MS Word, Excel, Outlook, PowerPoint, payroll
+                            software systems, SHRM certification, experience
+                            working in manufacturing, distribution,...
+                          </span>
+                        </div>
+                      </div>
+                      <div>
+                        <button className="flex items-center space-x-1.5 mx-4 mt-4 text-sm text-orange-800">
+                          icon -
+                          <span className="font-medium">
+                            Full Job Description
+                          </span>
+                        </button>
+                      </div>
+                      <div className="flex text-sm items-center space-x-4 px-4 pb-4 mt-4">
+                        <button className="px-4 py-2 rounded font-medium bg-orange-100 text-orange-800">
+                          Apply Now
+                        </button>
+                        <div className="flex items-center space-x-4">
+                          <button>ani btn</button>
+                          <div className="flex items-center space-x-4">
+                            <button>i1</button>
+                            <button>i2</button>
+                            <button>i3</button>
+                            <button>i4</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative flex flex-col lg:max-w-sm items-start justify-start text-start">
+                  <div className="flex flex-col items-start w-full rounded-3xl pt-2 overflow-auto hide-scrollbar border hover:border-yellow-600">
+                    <div className="flex flex-col text-start items-start px-4">
+                      <span className="font-bold text-start">
+                        HT Manager - My Auto Store
+                      </span>
+                      <button className="flex items-center space-x-1 text-start font-light text-sm">
+                        <span>EMR USA Metal Recycling</span>- icon
+                      </button>
+                    </div>
+                    <div className="flex flex-col w-full">
+                      <div className="flex flex-col mt-2 px-4 space-y-2 text-sm">
+                        <div>
+                          icon-
+                          <button className="text-start text-sm underline text-yellow-600 font-medium">
+                            Multiple Locations Available
+                          </button>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            About
+                          </span>
+                          <span className="font-light">
+                            EMR is one of the world\u2019s leading metal
+                            recycling companies with a history spanning decades.
+                            Our mission is to provide our customers with
+                            efficient and reliable metal recycling services
+                            while minimizing the environmental impact of our ...
+                          </span>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            Requirements
+                          </span>
+                          <span className="font-light">
+                            Bachelor\u2019s Degree, 7 years of HR experience, 5
+                            years of supervisory experience, advanced knowledge
+                            of MS Word, Excel, Outlook, PowerPoint, payroll
+                            software systems, SHRM certification, experience
+                            working in manufacturing, distribution,...
+                          </span>
+                        </div>
+                      </div>
+                      <div>
+                        <button className="flex items-center space-x-1.5 mx-4 mt-4 text-sm text-orange-800">
+                          icon -
+                          <span className="font-medium">
+                            Full Job Description
+                          </span>
+                        </button>
+                      </div>
+                      <div className="flex text-sm items-center space-x-4 px-4 pb-4 mt-4">
+                        <button className="px-4 py-2 rounded font-medium bg-orange-100 text-orange-800">
+                          Apply Now
+                        </button>
+                        <div className="flex items-center space-x-4">
+                          <button>ani btn</button>
+                          <div className="flex items-center space-x-4">
+                            <button>i1</button>
+                            <button>i2</button>
+                            <button>i3</button>
+                            <button>i4</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative flex flex-col lg:max-w-sm items-start justify-start text-start">
+                  <div className="flex flex-col items-start w-full rounded-3xl pt-2 overflow-auto hide-scrollbar border hover:border-yellow-600">
+                    <div className="flex flex-col text-start items-start px-4">
+                      <span className="font-bold text-start">
+                        HT Manager - My Auto Store
+                      </span>
+                      <button className="flex items-center space-x-1 text-start font-light text-sm">
+                        <span>EMR USA Metal Recycling</span>- icon
+                      </button>
+                    </div>
+                    <div className="flex flex-col w-full">
+                      <div className="flex flex-col mt-2 px-4 space-y-2 text-sm">
+                        <div>
+                          icon-
+                          <button className="text-start text-sm underline text-yellow-600 font-medium">
+                            Multiple Locations Available
+                          </button>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            About
+                          </span>
+                          <span className="font-light">
+                            EMR is one of the world\u2019s leading metal
+                            recycling companies with a history spanning decades.
+                            Our mission is to provide our customers with
+                            efficient and reliable metal recycling services
+                            while minimizing the environmental impact of our ...
+                          </span>
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <span className="font-bold text-xs text-gray-500">
+                            Requirements
+                          </span>
+                          <span className="font-light">
+                            Bachelor\u2019s Degree, 7 years of HR experience, 5
+                            years of supervisory experience, advanced knowledge
+                            of MS Word, Excel, Outlook, PowerPoint, payroll
+                            software systems, SHRM certification, experience
+                            working in manufacturing, distribution,...
+                          </span>
+                        </div>
+                      </div>
+                      <div>
+                        <button className="flex items-center space-x-1.5 mx-4 mt-4 text-sm text-orange-800">
+                          icon -
+                          <span className="font-medium">
+                            Full Job Description
+                          </span>
+                        </button>
+                      </div>
+                      <div className="flex text-sm items-center space-x-4 px-4 pb-4 mt-4">
+                        <button className="px-4 py-2 rounded font-medium bg-orange-100 text-orange-800">
+                          Apply Now
+                        </button>
+                        <div className="flex items-center space-x-4">
+                          <button>ani btn</button>
+                          <div className="flex items-center space-x-4">
+                            <button>i1</button>
+                            <button>i2</button>
+                            <button>i3</button>
+                            <button>i4</button>
                           </div>
                         </div>
                       </div>
