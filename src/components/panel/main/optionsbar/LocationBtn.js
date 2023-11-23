@@ -14,10 +14,19 @@ import {
   Stack,
 } from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
+import Select from 'react-select';
+
+const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' },
+];
 
 const LocationBtn = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [value, setValue] = useState('1');
+  const [selectedOption, setSelectedOption] = useState(null);
+
   return (
     <div className="flex flex-row items-center space-x-2 border rounded-xl outline-none basis-1/2 ">
       <button
@@ -39,7 +48,15 @@ const LocationBtn = () => {
               <RadioGroup onChange={setValue} value={value}>
                 <Stack direction="column">
                   <Radio value="1">Country</Radio>
-                  {value === '1' ? <div>react-select</div> : null}
+                  {value === '1' ? (
+                    <div>
+                      <Select
+                        defaultValue={selectedOption}
+                        onChange={setSelectedOption}
+                        options={options}
+                      />
+                    </div>
+                  ) : null}
                   <Radio value="2">City</Radio>
                   <div>2</div>
                 </Stack>
