@@ -17,9 +17,14 @@ import { ChevronDownIcon } from '@chakra-ui/icons';
 import Select from 'react-select';
 
 const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' },
+  { value: 'North America', label: 'North America' },
+  { value: 'Latin America', label: 'Latin America' },
+  { value: 'Europe', label: 'Europe' },
+  { value: 'EMEA', label: 'EMEA' },
+  { value: 'Asia', label: 'Asia' },
+  { value: 'Africa', label: 'Africa' },
+  { value: 'Oceania', label: 'Oceania' },
+  { value: 'United States', label: 'United States' },
 ];
 
 const LocationBtn = () => {
@@ -58,7 +63,7 @@ const LocationBtn = () => {
                     </div>
                   ) : null}
                   <Radio value="2">City</Radio>
-                  <div>2</div>
+                  <div>-</div>
                 </Stack>
               </RadioGroup>
             </div>
