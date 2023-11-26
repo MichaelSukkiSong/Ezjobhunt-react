@@ -34,8 +34,10 @@ const ExperienceBtn = () => {
                 className="mr-2 my-2"
                 onChange={() => setCheckboxChecked(!checkboxChecked)}
               />
-              Filter by Experience: {experienceRange[0]} - {experienceRange[1]}{' '}
-              Years
+              Filter by Experience:
+              {experienceRange.length !== 0
+                ? `${experienceRange[0]} - ${experienceRange[1]} Years`
+                : 'Any'}
             </span>
             {checkboxChecked ? (
               <RangeSlider
