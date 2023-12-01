@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const fetchjobs = async (boardToken, platform = 'greenhouse') => {
+const fetchjobs = async (boardToken, platform = 'greenhouse') => {
   let response;
   if (platform === 'greenhouse') {
     response = await axios.get(
@@ -15,3 +15,5 @@ export const fetchjobs = async (boardToken, platform = 'greenhouse') => {
 
   return response.data;
 };
+
+export default fetchjobs;
