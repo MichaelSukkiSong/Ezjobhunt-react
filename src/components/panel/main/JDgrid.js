@@ -1,17 +1,8 @@
-import { useEffect } from 'react';
 import JDcard from './JDcard';
-import fetchjobs from '../../../apis/fetchjobs';
 
 const JDgrid = () => {
-  useEffect(() => {
-    async function fetchData() {
-      const response = await fetchjobs('doordash', 'greenhouse');
-      // TODO: Use cloud functions instead of using state in react.
-      // fetch job->store in firebase->trigger save event->parse data->show in client
-      console.log(response);
-    }
-    fetchData();
-  }, []);
+  // TODO: Use cloud functions instead of using state in react.
+  // fetch job->store in firebase->trigger save event->parse data->show in client
 
   const renderJDcard = () => {
     return <JDcard />;
